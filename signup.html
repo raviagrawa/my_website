@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+        }
+       
+        h1{ color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            padding :10px;
+            margin:10px;
+            cursor: auto;
+        }
+        #fname,#email,#cword,#caress,#pcode{
+            
+            width:30%;
+            padding:5px;
+            margin:10px;
+            border-radius: 8px;
+
+        }
+        #lname ,#pword , #sress {
+            
+            width:30%;
+            padding:5px;
+            margin:10px;
+            border-radius: 8px;
+        }
+        #sword{
+            padding:5px;
+            margin:3px;
+            border-radius: 8px;
+        }
+        #aress{
+            padding:5px;
+            margin:10px;
+            border-radius: 8px; 
+        }
+        #SIGNUP{
+            background-color:blue;
+            border-radius: 5px;
+            color:white;
+            margin:5px;
+            padding:6px;
+
+        }
+        input[type="reset"]{
+            background-color:gray;
+            border-radius: 5px;
+            color:white;
+            margin:5px;
+            padding:6px;
+            
+        }
+        #SIGNUP:hover{
+            background-color: yellow;
+            color:black
+        }
+        input[type="reset"]:hover{
+            background-color:blue;
+        
+        }
+        #lgin{
+            background-color: blue;
+            COLOR:white;
+            padding:10px;
+            margin:10px;
+             text-align: center;
+             border-radius: 4px;
+             float:right;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+ 
+    <h1> Sign Up</h1>
+    <hr>
+    <form action ="/action_page.php">
+    <label for ="fname"><b>First Name</b></label>
+    
+        <input type="text" id="fname" name ="fname" placeholder="First Name ">
+        <label for ="lname"><b> Last Name</b></label>
+        <input type="text" id="lname" name ="lname" placeholder="Last Name "><br>
+        <label for ="email"><b>Email</b></label> 
+        <input type="email" id="email" name ="email" placeholder="abc@xyz.com ">
+       
+        <label for ="pword"><b>Password</b></label>
+        <input type="password" id="pword" name ="pword" placeholder=""><br>
+        
+        <span> We'll never share your email/password with anyone else</span><br>
+
+        <label for ="cword"><b> Confirm Password</b></label>
+        <input type="password" id="cword" name ="cword" placeholder="">
+        <input type="checkbox" id="sword" name ="sword" onclick="myfunction()">
+
+        <label for ="sword"><b> Show Password</b></label><br>
+        <label for ="aress"><b>Address</b></label>
+        <input type="text" style= "width:50% "id="aress" name ="aress" placeholder="1234 main st"><br>
+        <label for ="caress"><b>City</b></label>
+        <input type="text" style= "width:20% "id="caress" name ="caress" placeholder="Your City">
+        <label for ="saress"><b>State</b></label>
+        <input type="text" style= "width:20% "id="sress" name ="sress" placeholder="Your State"><br
+        <label for ="pcode"><b>Pincode</b></label> 
+        <input type="text" id="pcode" name ="aress" placeholder="6-digit Pincode"><br>
+        
+        <input type="checkbox" id="ins" name ="ins" placeholder="" ">
+        <label for ="ins">I have filled correct information and to the best of my knowledgee</label><br>
+        <input type ="reset" id="reset" name ="reset">
+       <button id="SIGNUP" href ="#" >Sign Up</button>
+        <hr> 
+        <br> 
+        <a id ="lgin" href ="/MYHOME/Logn.html">Login Instead?</a>
+
+       
+    
+
+       </form>
+
+       
+       
+
+
+       
+    
+      <script>
+          function myfunction(){
+              type ="text/javascript"
+              
+              var y= document.getElementById('pword');
+              if(y.type =='password'){
+                  y.type = 'text';
+              }
+              else{
+                  y.type= 'password';
+              }
+          }
+      </script> 
+    
+       
+    
+       
+    
+       
+    
+    
+
+</body>
+</html>
